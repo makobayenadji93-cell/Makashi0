@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang=» fr »>
+
+<head>
+    <meta charset=» UTF-8 »>
+    <title>Infos Utilisateur</title>
+    <style>
+        Body {
+            Font-family: Arial, sans-serif;
+            Background-color: #f2f2f2;
+            Padding: 20px;
+        }
+        
+        Input,
+        button {
+            Margin: 5px 0;
+            Padding: 8px;
+            Width: 100%;
+            Font-size: 16px;
+        }
+        
+        #resultat {
+            Margin-top: 20px;
+            Font-weight: bold;
+            Color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Entrez vos informations</h2>
+    <input type="text" id="nom" placeholder="Nom">
+    <input type=» text » id=» surnom » placeholder="Surnom">
+    <input type="number" id="age" placeholder="Âge">
+    <input type="text" id="lieu" placeholder="Lieu">
+    <button onclick="afficherInfos()">Soumettre</button>
+
+    <div id=» resultat »></div>
+
+    <script>
+        function afficherInfos() {
+            const Nom = document.getElementById('nom').value;
+            const surnom = document.getElementById('surnom').value;
+            const age = document.getElementById('age').value;
+            const lieu = document.getElementById('lieu').value;
+        }
+    </script>
+</body>
+
+</html>
